@@ -69,6 +69,7 @@ for (let i = 0; i < tabLinks.length; i++) {
   });
 }
 
+
 // questions 
 
 for (let i = 0; i < questions.length; i++) {
