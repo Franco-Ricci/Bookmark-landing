@@ -32,21 +32,21 @@ const info = [
     tabTitle: "Bookmark in one click",
     tabText:
       "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-    tabImg: "/images/illustration-features-tab-1.svg",
+    tabImg: "images/illustration-features-tab-1.svg",
     alt: "Bookmark in one click"
   },
   {
     tabTitle: "Intelligent search",
     tabText:
       "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
-    tabImg: "/images/illustration-features-tab-2.svg",
+    tabImg: "images/illustration-features-tab-2.svg",
     alt: "Intelligent search"
   },
   {
     tabTitle: "Share your bookmarks",
     tabText:
       " Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
-    tabImg: "/images/illustration-features-tab-3.svg",
+    tabImg: "images/illustration-features-tab-3.svg",
     alt: "Share your bookmarks"
   },
 ];
@@ -129,10 +129,10 @@ menuHamburguer.addEventListener("click", () => {
   navBtn.classList.toggle("menu__link-button");
 
   if (iconMenu.getAttribute("data-name") === "menu") {
-    iconMenu.setAttribute("src", "/images/icon-close.svg");
+    iconMenu.setAttribute("src", "images/icon-close.svg");
     iconMenu.setAttribute("data-name", "close");
   } else {
-    iconMenu.setAttribute("src", "/images/icon-hamburger.svg");
+    iconMenu.setAttribute("src", "images/icon-hamburger.svg");
     iconMenu.setAttribute("data-name", "menu");
   }
 });
