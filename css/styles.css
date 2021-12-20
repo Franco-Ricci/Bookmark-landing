@@ -55,7 +55,7 @@ body {
 
 .nav__links--red:hover {
   color: var(--Soft-Red);
-  outline: 2px solid var(--Soft-Red);
+  outline: 1px solid var(--Soft-Red);
   background-color: white;
 
   filter: drop-shadow(0 0 10px hsla(0, 94%, 66%, 0.445));
@@ -123,14 +123,14 @@ body {
 
 .btn__main:hover{
   background-color: white;
-  outline: 2px solid var(--Soft-Blue);
+  outline: 1px solid var(--Soft-Blue);
   color:var(--Soft-Blue);
 }
 
 .btn__main--gray:hover{
   background-color: white;
   color:black;
-  outline: 2px solid black;
+  outline: 1px solid black;
 }
 .container__hero {
   position: relative;
@@ -230,6 +230,8 @@ body {
 .tab__img {
   position: relative;
   z-index: 1;
+  height:350px;
+  width: 450px;
 }
 
 .bg__blue--left {
@@ -260,7 +262,7 @@ body {
 .tab__btn:hover{
   color: var(--Soft-Blue);
   background-color: white;
-  outline: 2px solid var(--Soft-Blue)
+  outline: 1px solid var(--Soft-Blue)
 }
 
 .cards {
@@ -315,7 +317,7 @@ body {
 .btn__add:hover{
   color: var(--Soft-Blue);
   background-color: white;
-  outline: 2px solid var(--Soft-Blue)
+  outline: 1px solid var(--Soft-Blue)
 }
 .section__question {
   display: flex;
@@ -434,6 +436,7 @@ body {
 
 .contact__form{
   display: flex;
+  position:relative;
   flex-direction: row;
   align-items: center;
   gap: 20px;
@@ -454,14 +457,14 @@ body {
 }
 
 .input__email:focus{
-  border: 2px solid var(--Soft-Red);
+  outline: 2px solid var(--Soft-Red);
 }
 
 .error-input{
   background-image: url(../images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 11rem center;
-  border: 2px solid var(--Soft-Red);
+  outline: 2px solid var(--Soft-Red);
 }
 
 .error__email{
@@ -469,9 +472,9 @@ body {
   padding: 7px 17px;
   background-color: var(--Soft-Red);
   border-radius: 0px 0px 5px 5px;
-  position: relative;
-  right:73px;
-  bottom: 7px;
+  position: absolute;
+  right:147px;
+  bottom: -23px;
   font-size: 12px;
   color: white;
   font-style: italic;
@@ -542,6 +545,7 @@ body {
 .footer__medias{
   display: flex;
   cursor: pointer;
+  align-items: center;
   gap: 30px;
 }
 
@@ -583,6 +587,7 @@ body {
   }
 
   .tab__img{
+    height: 300px;
     width:400px;
     left: 20px;
   }
@@ -686,7 +691,8 @@ body {
   }
 
   .tab__img{
-    width: 400px;
+    height: 280px;
+    width: 370px;
     left: 20px;
   }
   .bg__blue--left{
@@ -754,16 +760,18 @@ body {
   }
   .contact__form{
     flex-direction: column;
+    gap: 0;
   }
 
   .btn__send{
     padding: 15px 60px;
-    margin-top: 20px;
+    margin-top: 15px;
 
   }
   .error__email{
     right:0;
-    bottom:94px;
+    bottom:0px;
+    position: relative;
   }
 
   .footer__menu, .footer__container{
@@ -783,7 +791,8 @@ body {
     text-align: center;
   }
   .tab__img{
-    width: 300px;
+    height: 220px;
+    width:280px;
     left: 0;
   }
 
@@ -798,9 +807,12 @@ body {
     width: 235px;
     top:270px
   }
-
+  .nav__links--red:hover{
+    transform: none;
+  }
   .contact__text{
     text-align: center;
+    line-height: 18px;
   }
 
 }
